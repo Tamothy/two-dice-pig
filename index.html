@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-2.2.4.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <title>
+    </title>
+  </head>
+  <body>
+    <center>
+    <h1> Let's play pig dice! </h1>
+    <h2>Rules:</h2>
+  </center>
+    <center align= "left">
+    <p>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</p>
+      <ul>
+        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+        <p>
+          <p>
+        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+        <p>
+          <p>
+        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+        <p>
+          <p>
+      </ul>
+    <p>The first player to score 100 or more points wins.</p>
+  </center>
+  <center>
+    <div class= "container">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="name1">Player 1</label>
+        <input type="text" class="form-control" id="name1" placeholder="Player 1's name here">
+      </div>
+      <button type="submit" class="playerone">Player one's turn</button>
+      <p>
+      <div class="form-group">
+        <label for="name2">Player 2</label>
+        <input type="text" class="form-control" id="name2" placeholder="Player 2's name here">
+      </div>
+      <button type="submit" class="playertwo">Player two's turn</button>
+    </center>
+    </form>
+    <h2>Scoreboard:</h2>
+    <div class="col-md-6">
+      <ul id="scoreOne">Player one score:</ul>
+      <button type="submit" class="hold1">Hold</button>
+      <button type="submit" class="score1">score</button>
+    </div>
+    <div class="col-md-6">
+      <ul id="scoreTwo">Player two score:</ul>
+      <button type="submit" class="hold2">hold</button>
+      <button type="submit" class="score2">score</button>
+    </div>
+</div>
+  </body>
+</html>
